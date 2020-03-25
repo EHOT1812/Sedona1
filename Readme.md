@@ -1,8 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Исаченков](https://up.htmlacademy.ru/adaptive/19/user/1216207).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Михон Кислый] (https://htmlacademy.ru/profile/smart-grizzly).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
