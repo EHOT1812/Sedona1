@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
         <title>«Sedona»</title>
@@ -214,51 +214,74 @@
                 <fieldset>
                     <section class="intriduced">
                             <h2 class="intriduced__introduce-myself">Представьтесь</h2>
-                                Имя*: <input type="text" class="intriduced__name" name="firstname" value="Петр" required><br><br>
-                                Фамилия*: <input type="text" class="intriduced__name" name="lastname" value="Иванов" required><br><br>
-                                Отчество*: <input type="text" class="intriduced__name" name="middlename" value="Александрович" required><br>
+                                  <label class="intriduced__name-lable" for="input-name"> Имя*: </label>
+                                  <input class="intriduced__name-input" id="input-name" type="text" placeholder="Петр" required />
+
+                                  <label class="intriduced__name-lable" for="input-surname"> Фамилия*:</label>
+                                  <input class="intriduced__name-input" id="input-surname" type="text" placeholder="Иванов" required/>
+
+                                  <label class="intriduced__name-lable" for="input-patronymic"> Отчество*:</label>
+                                  <input class="intriduced__name-input" id="input-patronymic" type="text"  placeholder="Александрович" required/>
                     </section>
                     <section class="contacts">
                             <h2 class="contacts-info">Контактная информация:</h2>
-                                <p class="contacts-tel">Контактный телефон:</p>
-                                    <input type="tel" name="tel" placeholder="Введите телефон" required>
-                                        <img src="#" class="incon-tel" alt="Инконка телефона">
-                                <p class="contacts-email">Электронная почта:</p>
-                                    <input type="email" name="email" placeholder="Введит e-mail" required>
-                                        <img src="#" class="incon-email" alt="Инконка имейла">
+
+                            <div class="contacts-box">
+                              <label class="contacts-tel" for="input-tel">Контактный телефон:</label>
+                              <div class="contacts-error contacts-phone" data-error="Ошибка, перепроверьте номер">
+                                <svg class="contacts__phone" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                                <g id="Page-1">
+                                  <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                                    <g id="phone" transform="translate(85.000000, 126.000000)">
+                                      <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                                </svg></div>
+                                <input class="contacts-input" id="input-tel" type="tel" placeholder="Введите телефон">
+                            </div>
+
+                            <div class="contacts-box">
+                              <label class="contacts-email" for="input-mail">Электронная почта:</label>
+                              <div class="contacts-error contacts-email__mail" data-error="Ошибка, перепроверьте почту"> <svg class="contacts__email" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+  <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+</svg></div>
+                                <input class="contacts-input" id="input-mail" type="email" placeholder="Введите e-mail">
+
+                            </div>
                     </section>
                     <section class="impression">
                             <h2 class="impression__general-impression">Ваше общее впечатление:</h2>
-                            <label class="impression__positive">
-                                <input type="radio" checked name="radio"> Скорее положительное<br>
-                            </label>
-                            <label class="impression__negative">
-                                <input type="radio" name="radio"> Скорее отрицательное<br>
-                            </label>
-                            <label class="impression__complicate">
-                                <input type="radio" name="radio"> Затрудняюсь ответить<br>
-                            </label>
+                                <input class="impression-input" type="radio" name="radio" id="impression__positive" checked>
+                                <label class="impression-label" for="impression__positive">Скорее положительное</label>
+
+                                <input class="impression-input" type="radio" name="radio" id="impression__negative">
+                                <label class="impression-label" for="impression__negative">Скорее отрицательное</label>
+
+                                <input class="impression-input" type="radio" name="radio" id="impression__complicate">
+                                <label class="impression-label" for="impression__complicate">Затрудняюсь ответить</label>
                     </section>
                     <section class="sight">
-                            <h2 class="sight__visited">Посещенные<br>достопримечательности:</h2>
-                            <label class="sight__devil-bridge">
-                                <input type="checkbox" checked name="checkbox"> Мост Дьявола<br>
-                            </label>
-                            <label class="sight__bell-mountain">
-                                <input type="checkbox" checked name="checkbox"> Гора-Колокол<br>
-                            </label>
-                            <label class="sight__slide-park">
-                                <input type="checkbox" checked name="checkbox"> Слайд-парк<br>
-                            </label>
-                            <label class="sight__red-rock">
-                                <input type="checkbox" name="checkbox"> Красные скалы<br>
-                            </label>
+                            <h2 class="sight__visited">Посещенные достопримечательности:</h2>
+
+                                <input class="sight-input" type="checkbox" name="checkbox" id="sight__devil-bridge" checked>
+                                <label  class="sight-label" for="sight__devil-bridge">Мост Дьявола</label>
+
+                                <input class="sight-input" type="checkbox" name="checkbox" id="sight__bell-mountain" checked>
+                                <label class="sight-label" for="sight__bell-mountain">Гора-Колокол</label>
+
+                                <input class="sight-input" type="checkbox" name="checkbox" id="sight__slide-park" checked>
+                                <label  class="sight-label" for="sight__slide-park">Слайд-парк</label>
+
+                                <input class="sight-input" type="checkbox" name="checkbox" id="sight__red-rock">
+                                <label  class="sight-label" for="sight__red-rock">Красные скалы</label>
                     </section>
                     <section class="emotions">
                             <h2 class="emotions__describe-emotions">Опишите свои эмоции:</h2>
-                                <textarea name="comment" rows="15">Опишите подробно все свои восторги</textarea>
+                      <textarea class="emotions__feedback" cols="40" rows="10" name="emotions_feedback" id="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+                      <button type="submit" class="form__btn">Отправить отзыв</button>
                     </section>
-                        <input type="submit" value="Отправить отзыв">
+
                     </fieldset>
                 </form>
         </main>
