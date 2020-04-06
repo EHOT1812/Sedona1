@@ -1,8 +1,4 @@
-@import "content.less";
-@import "page-name.less";
-@import "footer-name.less";
-@import "photo-name";
-@import "form-name.less";
+@import "common/fonts.less";
 
 @import "common/colors.less";
 
@@ -23,7 +19,15 @@
 @import "blocks/feature-picture.less";
 @import "blocks/dignity.less";
 @import "blocks/advantage.less";
-
+@import "blocks/social.less";
+@import "blocks/impression.less";
+@import "blocks/copyright.less";
+@import "blocks/bridge.less";
+@import "blocks/introduced.less";
+@import "blocks/contacts.less";
+@import "blocks/sight.less";
+@import "blocks/emotions.less";
+@import "blocks/visually-hidden";
 body {
   margin: 0;
   padding: 0;
@@ -50,10 +54,10 @@ body {
   color: @var-color-white;
 }
 
-.visualli-hidden {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+input {
+  width: 206px;
+  height: 58px;
+  padding: 21px auto;
+  background-color: @var-color-brown-button;
+  margin-bottom: 20px;
 }
