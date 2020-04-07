@@ -28,10 +28,12 @@
 @import "blocks/sight.less";
 @import "blocks/emotions.less";
 @import "blocks/visually-hidden";
+
+
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  min-width: 320px;
   height: 100%;
 
   font: @font;
@@ -47,9 +49,9 @@ body {
 
 .page{
   position: inherit;
-  max-width: 320px;
+  width: 280px;
   min-height: auto;
-  margin: 0 auto;
+  padding: 0 auto;
   font-size: 0;
   color: @var-color-white;
 }
