@@ -14,3 +14,37 @@
   background-color: @var-background-color;
 }
 
+.main-nav {
+  min-height: 346px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 56px;
+    width: 768px;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+  }
+
+  .main-nav__list {
+    height: 56px;
+    width: 768px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width:  1200px;
+  }
+}

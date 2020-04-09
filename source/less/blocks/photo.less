@@ -62,7 +62,52 @@
   color: @var-color-black;
 }
 
-.photo__author {
+.photo__author-boris {
+  position: relative;
+  width: 310px;
+  top: 5px;
+  right: 70px;
+  padding-left: 15px;
+  font: @font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  color: @var-color-white-gray;
+}
+
+.photo__author-sergey {
+  position: relative;
+  width: 310px;
+  top: 5px;
+  right: 70px;
+  padding-left: 15px;
+  font: @font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  color: @var-color-white-gray;
+}
+
+.photo__author-anton {
+  position: relative;
+  width: 310px;
+  top: 5px;
+  right: 70px;
+  padding-left: 15px;
+  font: @font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  color: @var-color-white-gray;
+}
+
+.photo__author_petr {
   position: relative;
   width: 310px;
   top: 5px;
@@ -107,7 +152,273 @@
   color: @var-color-white-gray;
 }
 
+.photo__quantity-sergey {
+  position: relative;
+  width: 310px;
+  bottom: 30px;
+  right: 100px;
+  padding-left: 15px;
+  font: @font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  color: @var-color-white-gray;
+}
+
+.photo__quantity-anton {
+  position: relative;
+  width: 310px;
+  bottom: 30px;
+  right: 100px;
+  padding-left: 15px;
+  font: @font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  color: @var-color-white-gray;
+}
+
+.photo__quantity-petr {
+  position: relative;
+  width: 310px;
+  bottom: 30px;
+  right: 100px;
+  padding-left: 15px;
+  font: @font;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  color: @var-color-white-gray;
+}
+
 .photo__icon-like {
   position: relative;
   left: 20px;
+}
+
+.photo__icon-like-sergey {
+  position: relative;
+  left: 20px;
+}
+
+.photo__icon-like-anton {
+  position: relative;
+  left: 20px;
+}
+
+.photo__icon-like-petr {
+  position: relative;
+  left: 20px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .photo {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    position: relative;
+    bottom: 187px;
+    width: 768px;
+    height: 1163px;
+  }
+
+  .photo__people-spaces {
+    position: relative;
+    left: 60px;
+    width: 648px;
+    height: 400px;
+    background-image: url("source/img/photo-sunset-tablet@1x.jpg");
+  }
+
+  .photo__block-description-one{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    text-align: center;
+    left: 60px;
+    bottom: 13px;
+    width: 648px;
+    height: 80px;
+    background-color: @var-color-brown-button;
+  }
+
+  .photo__description {
+    position: relative;
+    white-space: nowrap;
+    width: 681px;
+    left: 20px;
+    height: 18px;
+    bottom: 10px;
+  }
+
+  .photo__author-boris {
+    position: relative;
+    white-space: nowrap;
+    top: 30px;
+    left: -184px;
+    width: 681px;
+    height: 18px;
+  }
+
+  .photo__icon-like {
+    position: relative;
+    left: 67px;
+    top: 27px;
+    width: 22px;
+    height: 20px;
+  }
+
+  .photo__quantity {
+    position: relative;
+    bottom: 17px;
+    left: 104px;
+  }
+
+  .photo__native-vegetation {
+    position: relative;
+    left: 60px;
+    bottom: 13px;
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo__block-description-two {
+    display: flex;
+    position: relative;
+    left: 60px;
+    bottom: 40px;
+    width: 324px;
+    height: 80px;
+    background-color: @var-color-brown-button;
+  }
+
+  .photo__vegetation {
+    position: relative;
+    white-space: nowrap;
+    text-align: left;
+    bottom: 10px;
+  }
+
+  .photo__author-sergey {
+    position: relative;
+    white-space: nowrap;
+    text-align: left;
+    top: 30px;
+    left: -223px;
+  }
+
+  .photo__icon-like-sergey {
+    position: relative;
+    left: -117px;
+    top: 30px;
+  }
+
+  .photo__icon-like-anton {
+    position: relative;
+    left: -117px;
+    top: 20px;
+  }
+
+  .photo__quantity-sergey {
+    position: relative;
+    top: 20px;
+    right: 120px;
+  }
+
+  .photo__quantity-anton {
+    position: relative;
+    top: 30px;
+    right: 120px;
+  }
+
+  .photo__road-the-north {
+    position: relative;
+    bottom: 372px;
+    left: 384px;
+    width: 324px;
+    height: 252px;
+  }
+
+  .photo__block-description-three {
+    display: flex;
+    position: relative;
+    left: 384px;
+    bottom: 384px;
+    width: 324px;
+    height: 80px;
+    background-color: @var-color-brown-button;
+  }
+
+  .photo__road {
+    position: relative;
+    left: 0px;
+    bottom: 10px;
+    width: 405px;
+  }
+
+  .photo__author-anton {
+    position: relative;
+    left: -174px;
+    top: 30px;
+  }
+
+  .photo__icon-like-anton {
+   position: relative;
+    left: 643px;
+    top: -435px;
+  }
+
+  .photo__quantity-anton {
+    position: relative;
+    left: 515px;
+    top: -476px;
+  }
+
+  .photo__devil-bridge {
+    position: relative;
+    left: 60px;
+    bottom: 466px;
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo__block-description-four {
+    display: flex;
+    position: relative;
+    left: 60px;
+    bottom: 478px;
+    width: 324px;
+    height: 80px;
+    background-color: @var-color-brown-button;
+  }
+
+  .photo__bridge {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .photo__author_petr {
+    position: relative;
+    left: -163px;
+    top: 30px;
+  }
+
+  .photo__icon-like-petr {
+    position: relative;
+    left: 320px;
+    bottom: 530px;
+  }
+
+  .photo__quantity-petr {
+    position: relative;
+    left: 192px;
+    bottom: 571px;
+  }
 }
