@@ -51,13 +51,34 @@ body {
 
 .page{
   position: inherit;
-  width: 320px;
+  max-width: 320px;
   min-height: auto;
-  padding: 0;
+  margin: 0 auto;
   font-size: 0;
   color: @var-color-white;
 }
 
+@media (min-width: @tablet-width) {
+  .page {
+    position: inherit;
+    max-width: 768px;
+    min-height: auto;
+    margin: 0 auto;
+    font-size: 0;
+    color: @var-color-white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page {
+    position: inherit;
+    max-width: 1200px;
+    min-height: auto;
+    margin: 0 auto;
+    font-size: 0;
+    color: @var-color-white;
+  }
+}
 input {
   width: 206px;
   height: 58px;
@@ -65,4 +86,3 @@ input {
   background-color: @var-color-brown-button;
   margin-bottom: 20px;
 }
-
