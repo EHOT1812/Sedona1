@@ -60,20 +60,33 @@
 
 @media (min-width: @desktop-width) {
   .bridge {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     position: relative;
     bottom: 86px;
-    left: 800px;
-    width: 400px;
+    left: 0;
+    width: 1200px;
     height: 247px;
   }
 
   .bridge__layer-5 {
     position: relative;
-    bottom: 184px;
-    right: 800px;
-    width: 800px;
+    bottom: 114px;
+    right: 0;
+    width: 801px;
     height: 257px;
     background-image: url("source/img/photo-bridge-desktop@1x.jpg");
+  }
+
+  .bridge__devil-bridge {
+    position: relative;
+    left: 883px;
+  }
+
+  .bridge__venture {
+    position: relative;
+    top: 100px;
+    left: 500px;
   }
 }
