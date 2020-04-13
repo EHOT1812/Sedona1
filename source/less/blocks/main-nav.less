@@ -45,6 +45,27 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
     width:  1200px;
   }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 56px;
+    width: 1200px;
+  }
+
+  .main-nav__list {
+    height: 56px;
+    width: 1200px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+
 }

@@ -29,3 +29,51 @@
   top: 22px;
   left: 214px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .video {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 188px;
+    width: 768px;
+    height: 499px;
+    background-color: @var-background-color;
+  }
+
+  .video__video-presentation {
+    position: relative;
+    bottom: 63px;
+    width: 648px;
+    height: 499px;
+  }
+
+  .video__icon {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 260px;
+    width: 1200px;
+    height: 585px;
+    background-color: @var-background-color;
+  }
+
+  .video__video-presentation {
+    position: relative;
+    left: 200px;
+    bottom: 0;
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__icon {
+    display: none;
+  }
+}

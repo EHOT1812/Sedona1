@@ -26,3 +26,57 @@
 .page-form {
   margin-bottom: -146px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: initial;
+    position: relative;
+    bottom: 136px;
+    left: 2px;
+    width: 768px;
+    height: 1440px;
+  }
+
+  .form__fieldset {
+    display: flex;
+    position: relative;
+    bottom: 60px;
+    width: 768px;
+    background-color: @var-background-color;
+    border: 0 none;
+  }
+
+  .form__btn {
+    position: relative;
+    left: 170px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .form {
+    display: flex;
+    flex-direction: initial;
+    position: relative;
+    bottom: 193px;
+    left: 2px;
+    width: 1200px;
+    height: 1440px;
+  }
+
+  .form__fieldset {
+    display: flex;
+    position: relative;
+    bottom: 60px;
+    width: 1200px;
+    background-color: @var-background-color;
+    border: 0 none;
+  }
+
+  .form__btn {
+    position: relative;
+    left: 0;
+  }
+}

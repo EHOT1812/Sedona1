@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
         <div class="page">
@@ -198,7 +197,7 @@
             </nav>
             <div class="page-header__background-photo">
               <img class="page-header__photo-back" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="Горы">
-              <svg class="page-header__intro-mask-photo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="340px" height="27.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
+              <svg class="page-header__intro-mask-photo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="340px" height="27.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve" preserveAspectRatio="none">
                   <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
                 <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
                 </svg>
@@ -214,17 +213,17 @@
                     </header>
                 </section>
                 <form class="form" action="https://echo.htmlacademy.ru" method="post">
-                <fieldset>
+                <fieldset class="form__fieldset">
                     <section class="introduced">
-                            <h2 class="introduced__introduce-myself">Представьтесь</h2>
+                            <h2 class="introduced__introduce-myself">Представьтесь:</h2>
                                   <label class="introduced__name-label" for="input-name"> Имя*: </label>
                                   <input class="introduced__name-input" id="input-name" type="text" placeholder="Петр" required />
 
-                                  <label class="introduced__name-label" for="input-surname"> Фамилия*:</label>
-                                  <input class="introduced__name-input" id="input-surname" type="text" placeholder="Иванов" required/>
+                                  <label class="introduced__surname-label" for="input-surname"> Фамилия*:</label>
+                                  <input class="introduced__surname-input" id="input-surname" type="text" placeholder="Иванов" required/>
 
-                                  <label class="introduced__name-label" for="input-patronymic"> Отчество*:</label>
-                                  <input class="introduced__name-input" id="input-patronymic" type="text"  placeholder="Александрович" required/>
+                                  <label class="introduced__patronymic-label" for="input-patronymic"> Отчество*:</label>
+                                  <input class="introduced__patronymic-input" id="input-patronymic" type="text"  placeholder="Александрович" required/>
                     </section>
                     <section class="contacts">
                             <h2 class="contacts-info">Контактная информация:</h2>
@@ -241,7 +240,7 @@
                                   </g>
                                 </g>
                                 </svg></div>
-                                <input class="contacts-input" id="input-tel" type="tel" placeholder="Введите телефон">
+                                <input class="contacts-input-tel" id="input-tel" type="tel" placeholder="Введите телефон">
                             </div>
 
                             <div class="contacts-box">
@@ -249,35 +248,36 @@
                               <div class="contacts-error contacts__email-mail" data-error="Ошибка, перепроверьте почту"> <svg class="contacts__email" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
   <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
 </svg></div>
-                                <input class="contacts-input" id="input-mail" type="email" placeholder="Введите e-mail">
+                                <input class="contacts-input-email" id="input-mail" type="email" placeholder="Введите e-mail">
 
                             </div>
                     </section>
                     <section class="impression">
                             <h2 class="impression__general-impression">Ваше общее впечатление:</h2>
                                 <input class="impression-input" type="radio" name="radio" id="impression__positive" checked>
-                                <label class="impression-label" for="impression__positive">Скорее положительное</label>
+                                <label class="impression-label-positive" for="impression__positive">Скорее положительное</label>
 
                                 <input class="impression-input" type="radio" name="radio" id="impression__negative">
-                                <label class="impression-label" for="impression__negative">Скорее отрицательное</label>
+                                <label class="impression-label-negative" for="impression__negative">Скорее отрицательное</label>
 
                                 <input class="impression-input" type="radio" name="radio" id="impression__complicate">
-                                <label class="impression-label" for="impression__complicate">Затрудняюсь ответить</label>
+                                <label class="impression-label-complicate" for="impression__complicate">Затрудняюсь ответить</label>
                     </section>
                     <section class="sight">
                             <h2 class="sight__visited">Посещенные достопримечательности:</h2>
-
+                                <div class="sight__checkbox">
                                 <input class="sight-input" type="checkbox" name="checkbox" id="sight__devil-bridge" checked>
-                                <label  class="sight-label" for="sight__devil-bridge">Мост Дьявола</label>
+                                <label  class="sight-label__devil-bridge" for="sight__devil-bridge">Мост Дьявола</label>
 
                                 <input class="sight-input" type="checkbox" name="checkbox" id="sight__bell-mountain" checked>
-                                <label class="sight-label" for="sight__bell-mountain">Гора-Колокол</label>
+                                <label class="sight-label__bell-mountain" for="sight__bell-mountain">Гора-Колокол</label>
 
                                 <input class="sight-input" type="checkbox" name="checkbox" id="sight__slide-park" checked>
-                                <label  class="sight-label" for="sight__slide-park">Слайд-парк</label>
+                                <label  class="sight-label__slide-park" for="sight__slide-park">Слайд-парк</label>
 
                                 <input class="sight-input" type="checkbox" name="checkbox" id="sight__red-rock">
-                                <label  class="sight-label" for="sight__red-rock">Красные скалы</label>
+                                <label  class="sight-label___red-rock" for="sight__red-rock">Красные скалы</label>
+                                </div>
                     </section>
                     <section class="emotions">
                             <h2 class="emotions__describe-emotions">Опишите свои эмоции:</h2>
@@ -288,7 +288,7 @@
                     </fieldset>
                 </form>
         </main>
-          <footer class="page-footer">
+          <footer class="page-footer__form">
             <div class="page-footer__hashtag">
               <b class="page-footer__title">#Visitsedona</b>
             </div>
