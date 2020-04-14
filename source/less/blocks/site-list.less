@@ -60,15 +60,34 @@
 }
 
 @media (min-width: @desktop-width) {
-  .site-list {
-    width: 780px;
-  }
-
-  .main-nav__wrapper {
-    width: 960px;
-  }
-
   .site-list__item {
     display: inline-block;
+    box-sizing: border-box;
+    font: @font;
+    width: 300px;
+    padding: 15px;
+    border: none;
+    background-color: @var-color-white;
   }
-}
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+
+    &:nth-child(n+5) {
+      margin-top: 30px;
+      width: 25%;
+    }
+
+    .site-list__item-menu {
+      position: relative;
+      right: 50px;
+      width: 56px;
+      height: 11px;
+      font-family: @font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: center;
+      color: @var-color-black;
+    }
+  }

@@ -35,3 +35,85 @@
   color: @var-color-black;
 }
 
+
+@media (min-width: @tablet-width) {
+  .emotions {
+    position: relative;
+    left: 60px;
+    bottom: 200px;
+    width: 648px;
+    height: 374px;
+  }
+
+  .emotions__describe-emotions {
+    position: relative;
+    bottom: 30px;
+    left: 115px;
+    width: 400px;
+    height: 42px;
+    background-color: @var-background-color;
+  }
+
+  .emotions__feedback {
+    position: relative;
+    left: 0;
+    width: 648px;
+    height: 160px;
+    background-color: @var-background-body;
+  }
+
+  .emotions__feedback::placeholder {
+    position: relative;
+    left: 21px;
+    width: 350px;
+    height: 43px;
+    font-family: @font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: @var-color-black;
+  }
+}
+
+
+
+@media (min-width: @desktop-width) {
+  .emotions {
+    position: relative;
+    left: 60px;
+    bottom: 410px;
+    width: 1080px;
+    height: 374px;
+  }
+
+  .emotions__describe-emotions {
+    position: relative;
+    bottom: 30px;
+    left: 360px;
+    width: 400px;
+    height: 42px;
+    background-color: @var-background-color;
+  }
+
+  .emotions__feedback {
+    position: relative;
+    left: 0;
+    width: 1080px;
+    height: 160px;
+    background-color: @var-background-body;
+  }
+
+  .emotions__feedback::placeholder {
+    position: relative;
+    left: 21px;
+    width: 350px;
+    height: 43px;
+    font-family: @font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: @var-color-black;
+  }
+}

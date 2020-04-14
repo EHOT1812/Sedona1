@@ -34,7 +34,7 @@
   color: @var-color-white-gray;
 }
 
-.contacts-input::placeholder {
+.contacts-input-tel::placeholder {
   position: relative;
   width: 136px;
   height: 22px;
@@ -47,7 +47,24 @@
   color: @var-color-black;
 }
 
-.contacts-input {
+.contacts-input-email::placeholder {
+  position: relative;
+  width: 136px;
+  height: 22px;
+  left: 20px;
+  font-family: @font;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: @var-color-black;
+}
+
+.contacts-input-tel {
+  width: 300px;
+}
+
+.contacts-input-email{
   width: 300px;
 }
 
@@ -95,4 +112,134 @@
   position: relative;
   top: 20px;
   left: 20px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 648px;
+    height: 308px;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    left: 60px;
+    border-bottom: none;
+  }
+
+  .contacts-info {
+    position: relative;
+    left: 70px;
+    bottom: 30px;
+    width: 400px;
+    height: 18px;
+    background-color: @var-background-color;
+  }
+
+  .contacts-tel {
+    position: relative;
+    right: 50px;
+    bottom: 30px;
+  }
+
+  .contacts-input-tel {
+    position: relative;
+    right: 35px;
+    bottom: 25px;
+    width: 648px;
+    height: 58px;
+  }
+
+  .contacts-email {
+    position: relative;
+    right: 50px;
+    bottom: 5px;
+  }
+
+  .contacts-input-email {
+    position: relative;
+    right: 35px;
+    bottom: 5px;
+    width: 648px;
+    height: 58px;
+  }
+
+  .contacts-phone {
+    position: absolute;
+    z-index: 1;
+    left: 576px;
+    top: 56px;
+  }
+
+  .contacts__email-mail {
+    position: absolute;
+    z-index: 1;
+    top: 190px;
+    left: 576px
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 1080px;
+    height: 308px;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    left: 60px;
+    border-bottom: none;
+  }
+
+  .contacts-info {
+    position: relative;
+    left: 312px;
+    bottom: 30px;
+    width: 400px;
+    height: 18px;
+    background-color: @var-background-color;
+  }
+
+  .contacts-tel {
+    position: relative;
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+  }
+
+  .contacts-input-tel {
+    position: relative;
+    top: 30px;
+    right: 35px;
+    bottom: 25px;
+    width: 315px;
+    height: 58px;
+  }
+
+  .contacts-email {
+    position: relative;
+    left: 515px;
+    bottom: 55px;
+  }
+
+  .contacts-input-email {
+    position: relative;
+    left: 530px;
+    bottom: 55px;
+    width: 315px;
+    height: 58px;
+  }
+
+  .contacts-phone {
+    position: absolute;
+    z-index: 1;
+    left: 422px;
+    top: 81px;
+  }
+
+  .contacts__email-mail {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 973px
+  }
 }

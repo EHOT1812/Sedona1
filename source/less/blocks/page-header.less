@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  min-width: 340px;
+  width: 340px;
   height: 56px;
   background-color: @var-background-color;
 }
@@ -84,7 +84,9 @@
 @media (min-width: @tablet-width) {
   .page-header__logo {
     position: absolute;
-    left: 165px;
+    z-index: 1;
+    left: 285px;
+    width: 102px;
     height: 56px;
     background: none;
   }
@@ -97,7 +99,7 @@
   .page-header__photo {
     width: 768px;
     height: 482px;
-    margin-top: 0px;
+    margin-top: 0;
     background-image: url("source/img/bg-back-tablet@1x.jpg");
   }
 
@@ -118,11 +120,12 @@
   }
 
   .page-header__photo-back {
+    position: absolute;
     justify-content: center;
     top: 56px;
     width: 768px;
     height: 346px;
-    background-image: url("source/img/back-desktop-jpg@2x.png");
+    background-image: url("source/img/bg-back-tablet@1x.jpg");
   }
 
   .page-header__intro-mask-photo {
@@ -143,9 +146,68 @@
 }
 
 @media (min-width: @desktop-width) {
- .page-header__logo {
-   height: 96px;
- }
+  .page-header__logo {
+    position: absolute;
+    z-index: 1;
+    left: 520px;
+    width: 102px;
+    height: 96px;
+    background: none;
+  }
 
+  .page-header__background-photo {
+    display: flex;
+    height: 575px;
+  }
+
+  .page-header__photo {
+    position: absolute;
+    width: 1200px;
+    height: 518px;
+    margin-top: 0;
+    background-image: url("source/img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-header__intro-mask {
+    position: absolute;
+    top: 517px;
+    width: 1200px;
+    height: 57px;
+    object-fit: contain;
+    background-size: cover;
+    background-image: url("source/img/bg-intro-triangle-desktop.svg");
+  }
+
+  .page-header__intro-welcome {
+    position: absolute;
+    left: 325px;
+    width: 460px;
+    height: 350px;
+    background-image: url("source/img/text-sedona-index.svg");
+  }
+
+  .page-header__photo-back {
+    position: absolute;
+    justify-content: center;
+    top: 56px;
+    width: 1200px;
+    height: 346px;
+    background-image: url("source/img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-header__intro-mask-photo {
+    position: absolute;
+    left: -10px;
+    top: 345px;
+    width: 1200px;
+    height: 57px;
+    background-image: url("source/img/bg-intro-triangle-desktop.svg");
+  }
+
+  .page-header__intro-sedona {
+    position: absolute;
+    left: 370px;
+    width: 460px;
+    height: 80px;
+  }
 }
-

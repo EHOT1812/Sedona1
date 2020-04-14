@@ -125,11 +125,8 @@
   }
 
   .here__list-home {
-    position: relative;
-    bottom: 200px;
-  }
-
-  .here__list-home {
+      position: relative;
+      bottom: 200px;
       width: 75px;
       height: 75px;
       background-image: url("source/img/icon-house.svg");
@@ -145,5 +142,36 @@
     position: relative;
     bottom: 200px;
     left: 100px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .here {
+    display: flex;
+    position: relative;
+    bottom: 57px;
+    width: 1200px;
+    height: 74px;
+  }
+
+  .here__list-home {
+    position: relative;
+    bottom: 200px;
+    width: 75px;
+    height: 75px;
+    background-image: url("source/img/icon-house.svg");
+  }
+
+  .here__list-souvenirs {
+    position: relative;
+    bottom: 200px;
+    left: -130px;
+  }
+
+  .here__list-burger {
+    position: relative;
+    bottom: 200px;
+    left: -30px;
   }
 }

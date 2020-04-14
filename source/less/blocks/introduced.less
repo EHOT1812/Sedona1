@@ -20,16 +20,16 @@
 }
 
 .introduced__name-label {
-  width: 36px;
-  height: 11px;
-  margin-left: 14px;
-  margin-right: 14px;
-  font-family: @font;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: left;
-  color: @var-color-white-gray;
-}
+    width: 36px;
+    height: 11px;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-family: @font;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    color: @var-color-white-gray;
+  }
 
 .introduced__name-input::placeholder {
   position: relative;
@@ -45,3 +45,138 @@
 }
 
 
+.introduced__surname-label {
+  width: 36px;
+  height: 11px;
+  margin-left: 14px;
+  margin-right: 14px;
+  font-family: @font;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  color: @var-color-white-gray;
+}
+
+.introduced__surname-input::placeholder {
+  position: relative;
+  left: 22px;
+  width: 37px;
+  height: 27px;
+  font-family: @font;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: @var-color-black;
+}
+
+.introduced__patronymic-label {
+  width: 36px;
+  height: 11px;
+  margin-left: 14px;
+  margin-right: 14px;
+  font-family: @font;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  color: @var-color-white-gray;
+}
+
+.introduced__patronymic-input::placeholder {
+  position: relative;
+  left: 22px;
+  width: 37px;
+  height: 27px;
+  font-family: @font;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: @var-color-black;
+}
+
+@media (min-width: @tablet-width) {
+  .introduced {
+    position: relative;
+    left: 360px;
+    border-left: 1px solid #9A9A9A;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .introduced__name-input {
+    margin: 20px auto;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .introduced {
+    display: block;
+    position: relative;
+    left: 599px;
+    width: 595px;
+    height: 322px;
+    border-left: 1px solid #9A9A9A;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .introduced__name-input {
+    position: relative;
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  .introduced__name-label {
+    width: 36px;
+    height: 11px;
+    font: @font;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 79px;
+    margin-right: 14px;
+    font-weight: 400;
+    color: @var-color-white-gray;
+  }
+
+  .introduced__surname-label {
+    width: 36px;
+    height: 11px;
+    font: @font;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 79px;
+    margin-right: 14px;
+    font-weight: 400;
+    color: @var-color-white-gray;
+  }
+
+  .introduced__surname-input {
+    position: relative;
+    width: 312px;
+    margin-top: 10px;
+  }
+
+  .introduced__patronymic-label {
+    position: relative;
+    right: 484px;
+    top: 93px;
+    width: 36px;
+    height: 11px;
+    font: @font;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 79px;
+    margin-right: 14px;
+    font-weight: 400;
+    color: @var-color-white-gray;
+  }
+
+  .introduced__patronymic-input {
+    position: relative;
+    width: 312px;
+    left: 166px;
+    margin-top: 10px;
+  }
+}
