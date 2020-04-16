@@ -35,18 +35,14 @@
     border: none;
     background-color: @var-color-white;
 
-      &:nth-child(2) {
-        margin-right: auto;
-      }
-
-      &:nth-child(n+5) {
-        margin-top: 30px;
-        width: 25%;
+      &:last-child {
+        margin-right: 0;
       }
   }
 
   .site-list__item-menu {
     position: relative;
+    left: -78px;
     right: 125px;
     width: 56px;
     height: 11px;
@@ -56,6 +52,21 @@
     line-height: 26px;
     text-align: center;
     color: @var-color-black;
+  }
+
+  .site-list__item a[href] {
+    &:hover {
+      color: @var-background;
+    }
+
+    &:active {
+      color: #604e43;
+    }
+  }
+  .site-list__item .site-list__item--active a[href] {
+    &:visited {
+      color: #766357;
+    }
   }
 }
 

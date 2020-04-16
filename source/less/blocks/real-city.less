@@ -42,6 +42,9 @@
 @media (min-width: @tablet-width) {
   .real-city {
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 36px;
     width: 768px;
     height: 256px;
   }
@@ -53,24 +56,27 @@
   }
 
   .real-city__present {
-    position: relative;
-    bottom: 10px;
+    position: inherit;
+    margin-top: 46px;
+    bottom: 45px;
     left: 30px;
     width: 162px;
-    height: 10px;
+    height: 50px;
     font: @font;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    text-align: center;
   }
 
   .real-city__number-one {
     position: relative;
-    top: 90px;
-    right: 90px;
-    width: 200px;
-    height: 161px;
+    bottom: 285px;
+    right: 200px;
+    top: 60px;
+    padding-top: 32px;
+    padding-left: 51px;
+    width: 185px;
+    height: 50px;
     font: @font;
     font-size: 14px;
     font-weight: 400;
@@ -78,8 +84,10 @@
     text-align: center;
   }
 
-  br {
-    display: none;
+  .real-city__feature-picture {
+    position: relative;
+    left: 278px;
+    bottom: 154px;
   }
 }
 
@@ -87,36 +95,42 @@
 @media (min-width: @desktop-width) {
   .real-city {
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 58px;
     width: 1200px;
     height: 256px;
-    bottom: 57px;
   }
 
   .real-city__feature-picture {
+    position: relative;
     width: 800px;
     height: 256px;
-    background-image: url("source/img/main-city-desktop@1x.jpg");
+    left: 400px;
   }
 
   .real-city__present {
-    position: relative;
-    bottom: 10px;
-    left: 30px;
+    position: inherit;
+    margin-top: 46px;
+    bottom: 45px;
+    left: 80px;
     width: 162px;
-    height: 10px;
+    height: 50px;
     font: @font;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    text-align: center;
   }
 
   .real-city__number-one {
     position: relative;
-    top: 90px;
-    right: 90px;
-    width: 200px;
-    height: 161px;
+    bottom: 285px;
+    right: 200px;
+    top: 60px;
+    padding-top: 32px;
+    padding-left: 51px;
+    width: 279px;
+    height: 50px;
     font: @font;
     font-size: 14px;
     font-weight: 400;

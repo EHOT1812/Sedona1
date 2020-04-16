@@ -35,22 +35,75 @@
 @media (min-width: @tablet-width) {
   .resolve {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    justify-content: center;
-    bottom: 187px;
+    bottom: 172px;
     width: 768px;
-    height: 248px;
+    height: 256px;
+  }
+
+  .resolve__photo-and-video {
+    position: relative;
+    margin-top: 46px;
+    left: 139px;
+    width: 428px;
+    height: 24px;
+    bottom: 24px;
+    font: @font;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .resolve__journey {
+    position: relative;
+   left: 170px;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    width: 428px;
+    height: 100px;
+    font: @font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
   }
 }
 
 @media (min-width: @desktop-width) {
   .resolve {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    justify-content: center;;
-    bottom: 230px;
+    bottom: 229px;
     width: 1200px;
-    height: 248px;
+    height: 256px;
   }
 
+  .resolve__header {
+    position: relative;
+    left: 228px;
+  }
+
+  .resolve__photo-and-video {
+    position: relative;
+    width: 428px;
+    height: 24px;
+    bottom: 24px;
+    font: @font;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .resolve__journey {
+    position: relative;
+    width: 428px;
+    height: 100px;
+    font: @font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
 }
