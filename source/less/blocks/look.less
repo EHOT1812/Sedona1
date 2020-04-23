@@ -1,56 +1,90 @@
 .look {
-  position: relative;
-  bottom: 150px;
-  width: 340px;
-  height: 150px;
+  width: 100%;
   background-color: @var-background-color;
 }
 
-.look__doubt {
-  position: relative;
-  width: 269px;
-  left: 43px;
-  font: @font;
-  font-size: 18px;
-  line-height: 24px;
+.look__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 39px;
+}
+
+.look__title {
+  font-family: @font;
   font-weight: 700;
-  padding-top: 10px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
   color: @var-color-black;
 }
 
-.look__presentation {
-  width: 310px;
-  bottom: 40px;
-  padding-left: 15px;
-  font: @font;
-  font-size: 14px;
-  line-height: 21px;
+.look__text {
+  font-family: @font;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
-  vertical-align: top;
-  color: #333333;
+  padding-top: 30px;
+  width: 75%;
+  color: @var-color-white-gray;
 }
-
 
 @media (min-width: @tablet-width) {
   .look {
+    width: 100%;
+  }
+
+  .look__item {
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: 187px;
-    width: 768px;
-    height: 244px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 68px;
+  }
+
+  .look__title {
+    font-family: @font;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    color: @var-color-black;
+  }
+
+  .look__text {
+    font-family: @font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 30px;
+    width: 60%;
+    color: @var-color-white-gray;
   }
 }
 
 @media (min-width: @desktop-width) {
   .look {
+    width: 100%;
+  }
+
+  .look__item {
+    width: 37%;
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: 230px;
-    width: 1200px;
-    height: 244px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 68px;
+    margin-left: 392px;
+  }
+
+  .look__title {
+    width: 100%;
+  }
+
+  .look__text {
+    width: 100%;
   }
 }

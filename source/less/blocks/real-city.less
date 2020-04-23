@@ -1,140 +1,177 @@
 .real-city {
-  position: relative;
-  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: @var-background;
-  width: 340px;
-  height: 239px;
+  width: 100%;
+  height: auto;
 }
 
+.real-city__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0;
+}
 .real-city__present {
-  padding-top: 41px;
-  padding-left: 25px;
-  width: 265px;
-  height: 20px;
-  font: @font;
+  width: 80%;
+  height: auto;
+  font-family: @font;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  margin-left: 10px;
   text-align: center;
+  margin-top: 43px;
   color: @var-color-white;
 }
 
 .real-city__number-one {
-  padding-left: 5px;
-  width: 320px;
-  height: 149px;
-  font: @font;
+  width: 100%;
+  height: auto;
+  font-family: @font;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  margin-left: 5px;
   text-align: center;
+  padding-top: 10px;
   color: @var-color-white;
 }
 
+.real-city__sedona {
+  width: 95%;
+  height: auto;
+  font-family: @font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 10px;
+  color: @var-color-white;
+}
 .real-city__feature-picture {
   display: block;
   width: 100%;
   height: auto;
+  margin-top: 45px;
+}
+
+.real-city__intro-mask {
+  display: flex;
+  vertical-align: top;
 }
 
 @media (min-width: @tablet-width) {
   .real-city {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 36px;
-    width: 768px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: @var-background;
+    width: 100%;
     height: 256px;
   }
 
-  .real-city__feature-picture {
-    width: 490px;
-    height: 256px;
-    background-image: url("source/img/main-city-tablet@1x.jpg");
-  }
+  .real-city__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
 
+  }
   .real-city__present {
-    position: inherit;
-    margin-top: 46px;
-    bottom: 45px;
-    left: 30px;
-    width: 162px;
-    height: 50px;
-    font: @font;
+    width: 50%;
+    height: auto;
+    font-family: @font;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    text-align: center;
+    color: @var-color-white;
   }
 
   .real-city__number-one {
-    position: relative;
-    bottom: 285px;
-    right: 200px;
-    top: 60px;
-    padding-top: 32px;
-    padding-left: 51px;
-    width: 185px;
-    height: 50px;
-    font: @font;
+    width: 100%;
+    height: auto;
+    font-family: @font;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     text-align: center;
+    padding-top: 10px;
+    color: @var-color-white;
   }
 
+  .real-city__sedona {
+    width: 65%;
+    height: auto;
+    font-family: @font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 10px;
+    color: @var-color-white;
+  }
   .real-city__feature-picture {
-    position: relative;
-    left: 278px;
-    bottom: 154px;
+    display: block;
+    width: 100%;
+    height: 256px;
+    margin-top: 0;
+  }
+
+  .real-city__intro-mask {
+    display: none;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .real-city {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 58px;
-    width: 1200px;
-    height: 256px;
+    width: 100%;
   }
 
   .real-city__feature-picture {
-    position: relative;
     width: 800px;
     height: 256px;
-    left: 400px;
+  }
+
+  .real-city__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
   }
 
   .real-city__present {
-    position: inherit;
-    margin-top: 46px;
-    bottom: 45px;
-    left: 80px;
-    width: 162px;
-    height: 50px;
+    width: 50%;
     font: @font;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    text-align: center;
+    margin: 0;
   }
 
   .real-city__number-one {
-    position: relative;
-    bottom: 285px;
-    right: 200px;
-    top: 60px;
-    padding-top: 32px;
-    padding-left: 51px;
-    width: 279px;
-    height: 50px;
+    width: 100%;
     font: @font;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     text-align: center;
+  }
+
+  .real-city__sedona {
+    width: 70%;
+    height: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 25px;
   }
 }

@@ -1,198 +1,218 @@
 .sight {
-  width: 340px;
-  height: 390px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
   background-color: @var-background-color;
-  border-top: 1px solid #9A9A9A;
   border-bottom: 1px solid #9A9A9A;
 }
 
 .sight__visited {
-  position: relative;
-  left: 30px;
-  width: 280px;
-  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sight__title {
   font-family: @font;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   color: @var-color-black;
+  margin-top: 24px;
 }
 
-.sight-input {
-  position: relative;
-  right: 55px;
+.sight__checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-bottom: 26px;
+  margin-top: 26px;
 }
 
-.sight__label-devil-bridge {
+.sight__checkbox-item:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.sight__checkbox-item:nth-of-type(3) {
+  margin-top: 30px;
+}
+
+.sight__checkbox-item:nth-of-type(4) {
+  margin-top: 30px;
+}
+
+
+.sight__input {
+  width: 46px;
+  height: 46px;
+}
+
+.sight__label {
   position: absolute;
-  left: 95px;
-  width: 310px;
-  height: 14px;
-  padding-top: 17px;
   font-family: @font;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-align: left;
-  text-transform: none;
   color: @var-color-black;
-}
-
-.sight__label-red-rock {
-  position: absolute;
-  left: 95px;
-  width: 310px;
-  height: 14px;
-  padding-top: 17px;
-  font-family: @font;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
+  padding-left: 25px;
+  padding-top: 10px;
   text-transform: none;
-  color: @var-color-black;
 }
-
-.sight__label-bell-mountain {
-  position: absolute;
-  left: 95px;
-  width: 310px;
-  height: 14px;
-  padding-top: 17px;
-  font-family: @font;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: @var-color-black;
-}
-
-.sight__label-slide-park {
-  position: absolute;
-  left: 95px;
-  width: 310px;
-  height: 14px;
-  padding-top: 17px;
-  font-family: @font;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: @var-color-black;
-}
-
 
 @media (min-width: @tablet-width) {
   .sight {
-    position: relative;
-    bottom: 190px;
-    left: 60px;
-    width: 648px;
-    height: 306px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    background-color: @var-background-color;
+    border-top: 1px solid #9A9A9A;
     border-bottom: none;
+    margin-top: 78px;
   }
 
   .sight__visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sight__title {
     position: relative;
-    overflow-wrap: break-word;
-    bottom: 45px;
-    left: 115px;
-    width: 400px;
-    height: 42px;
-    background-color: @var-background-color;
-  }
-
-  .sight__checkbox {
-    position: relative;
-    left: 60px;
-    bottom: 15px;
-    width: 668px;
-    overflow: hidden;
-  }
-
-  .sight-input {
-    overflow: hidden;
-    margin: 10px 50px 20px 0;
-  }
-
-  .sight__label-bell-mountain {
-    left: 345px;
-    bottom: 140px;
-  }
-
-  .sight__label-red-rock {
-    left: 345px;
-    bottom: 50px;
-  }
-
-  .sight__label-devil-bridge {
-    top: 6px;
-    left: 87px;
-  }
-
-  .sight__label-slide-park {
-    top: 95px;
-    left: 87px;
-  }
-}
-
-
-
-@media (min-width: @desktop-width) {
-  .sight {
-    position: relative;
-    bottom: 296px;
-    left: 60px;
-    width: 1080px;
-    height: 306px;
-    border-bottom: none;
-  }
-
-  .sight__visited {
-    position: relative;
-    overflow-wrap: break-word;
-    bottom: 45px;
-    left: 360px;
-    width: 400px;
-    height: 42px;
-    background-color: @var-background-color;
+    width: 58%;
+    bottom: 52px;
+    background-color: @var-color-white;
+    font-family: @font;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: @var-color-black;
+    margin-top: 24px;
   }
 
   .sight__checkbox {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
-    position: relative;
-    left: -10px;
-    bottom: 15px;
-    width: 1080px;
-    overflow: hidden;
+    width: 86%;
+    margin-left: 130px;
+    margin-bottom: 26px;
+    margin-top: 0;
   }
 
-  .sight-input {
-    overflow: hidden;
-    margin: 10px 50px 20px 0;
+  .sight__checkbox-item:nth-of-type(1) {
+    width: 44%;
   }
 
-  .sight__label-bell-mountain {
-    left: 330px;
-    bottom: 50px;
+  .sight__checkbox-item:nth-of-type(2) {
+    width: 44%;
+    margin-top: 0;
   }
 
-  .sight__label-red-rock {
-    left: 900px;
-    bottom: 50px;
+  .sight__checkbox-item:nth-of-type(3) {
+    width: 44%;
+    margin-top: 30px;
   }
 
-  .sight__label-devil-bridge {
-    top: 6px;
-    left: 87px;
+  .sight__checkbox-item:nth-of-type(4) {
+    width: 44%;
+    margin-top: 30px;
   }
 
-  .sight__label-slide-park {
-    top: -24px;
-    left: 595px;
+
+  .sight__input {
+    width: 46px;
+    height: 46px;
+  }
+
+  .sight__label {
+    position: absolute;
+    font-family: @font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: @var-color-black;
+    padding-left: 25px;
+    padding-top: 10px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sight__title {
+    width: 43%;
+}
+
+  .sight__checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 73px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sight__checkbox-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 80px;
+    width: 50%;
+  }
+
+  .sight__checkbox-item:nth-of-type(1) {
+    width: 20%;
+    margin-right: 50px;
+  }
+
+  .sight__checkbox-item:nth-of-type(2) {
+    width: 20%;
+    margin-right: 50px;
+  }
+
+  .sight__checkbox-item:nth-of-type(3) {
+    width: 20%;
+    margin-top: 0;
+    margin-right: 50px;
+  }
+
+  .sight__checkbox-item:nth-of-type(4) {
+    width: 20%;
+    margin-top: 0;
+  }
+
+
+  .sight__input {
+    width: 46px;
+    height: 46px;
+  }
+
+  .sight__label {
+    position: absolute;
+    font-family: @font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: @var-color-black;
+    padding-left: 70px;
+    padding-top: 10px;
+    text-transform: none;
   }
 }

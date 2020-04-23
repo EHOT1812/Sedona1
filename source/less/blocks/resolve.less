@@ -1,33 +1,37 @@
 .resolve {
-  position: relative;
-  width: 340px;
-  height: 250px;
-  bottom: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: @var-background-color;
 }
 
+.resolve__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  margin-top: 44px;
+}
+
+
 .resolve__photo-and-video {
-  width: 269px;
-  font: @font;
+  font-family: @font;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding-left: 30px;
-  padding-top: 40px;
   text-align: center;
   color: @var-color-black;
 }
 
 .resolve__journey {
-  width: 310px;
-  bottom: 40px;
-  padding-left: 15px;
-  font: @font;
+  font-family: @font;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  vertical-align: top;
+  padding-top: 25px;
   color: @var-color-white-gray;
 }
 
@@ -35,75 +39,41 @@
 @media (min-width: @tablet-width) {
   .resolve {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 172px;
-    width: 768px;
-    height: 256px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .resolve__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 57%;
+    margin-top: 44px;
   }
 
   .resolve__photo-and-video {
-    position: relative;
-    margin-top: 46px;
-    left: 139px;
-    width: 428px;
-    height: 24px;
-    bottom: 24px;
-    font: @font;
-    font-size: 21px;
+    font-family: @font;
+    font-size: 30px;
     font-weight: 700;
     line-height: 26px;
+    text-align: center;
   }
 
   .resolve__journey {
-    position: relative;
-   left: 170px;
-    padding-top: 20px;
-    padding-bottom: 55px;
-    width: 428px;
-    height: 100px;
-    font: @font;
+    font-family: @font;
     font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 24px;
     text-align: center;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .resolve {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 229px;
-    width: 1200px;
-    height: 256px;
-  }
-
   .resolve__header {
-    position: relative;
-    left: 228px;
-  }
-
-  .resolve__photo-and-video {
-    position: relative;
-    width: 428px;
-    height: 24px;
-    bottom: 24px;
-    font: @font;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 26px;
-  }
-
-  .resolve__journey {
-    position: relative;
-    width: 428px;
-    height: 100px;
-    font: @font;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
+    width: 36%;
+    margin-top: 113px;
   }
 }

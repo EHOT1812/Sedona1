@@ -1,393 +1,158 @@
 .here {
-  display: block;
-  width: 340px;
-  height: 450px;
-  padding-top: 300px;
+  width: 100%;
+  padding:  26px 0 42px;
   background-color: @var-background-color;
+
 }
 
-.here__list-home {
-  display: block;
+.here > .here__item {
+  display: flex;
+  padding-right: 12px;
+}
+
+.here >.here__item:not(:first-of-type) {
+  margin-top: 25px;
+}
+
+.here >.here__item > .here__image {
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 58px;
+  margin-right: 12px;
+}
+
+.here > .here__item > .here__block-content {
+  display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  background-color: @var-background-color;
-  flex-grow: 1;
+  width: 100%;
 }
 
-.here__house {
-  position: absolute;
-  padding-bottom: 150px;
-  padding-left: 10px;
-  text-decoration: none;
+.here > .here__item > .here__block-content:nth-of-type(1){
+  margin-top: 10px;
 }
 
-.here__home {
-  position: relative;
-  justify-content: flex-start;
-  width: 210px;
-  font: @font;
-  padding-left: 69px;
-  font-weight: 700;
+.here > .here__item > .here__block-content:nth-of-type(2){
+  margin-top: 12px;
+}
+
+.here > .here__item > .here__block-content:nth-of-type(3){
+  margin-top: 6px;
+}
+
+.here > .here__item > .here__block-content > .here__block-content-title {
+  font-family: @font;
   font-size: 18px;
-  line-height: 26px;
-  text-align: left;
-  color:@var-color-black;
-}
-
-.here__sojourn {
-  position: relative;
-  justify-content: flex-start;
-  width: 250px;
-  font: @font;
-  padding-left: 69px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: left;
-  color: @var-color-white-gray;
-}
-
-.here__gift {
-  position: absolute;
-  padding-bottom: 150px;
-  padding-left: 10px;
-  text-decoration: none;
-}
-
-.here__souvenirs {
-  position: relative;
-  justify-content: flex-start;
-  width: 210px;
-  padding-left: 69px;
-  font: @font;
   font-weight: 700;
-  font-size: 18px;
   line-height: 26px;
-  text-align: left;
   color: @var-color-black;
+  text-transform: uppercase;
 }
 
-.here__local-production {
-  position: relative;
-  justify-content: flex-start;
-  width: 250px;
-  font: @font;
-  padding-left: 69px;
-  font-weight: 400;
+.here > .here__item > .here__block-content > .here__block-content-text {
+  font-family: @font;
+  margin-top: 4px;
   font-size: 14px;
-  line-height: 26px;
-  text-align: left;
-  color: @var-color-white-gray;
-}
-
-.here__burger {
-  position: absolute;
-  padding-bottom: 150px;
-  padding-left: 10px;
-  text-decoration: none;
-}
-
-.here__food {
-  position: relative;
-  justify-content: flex-start;
-  width: 210px;
-  padding-left: 69px;
-  font: @font;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: left;
-  color: @var-color-black;
-}
-
-.here__cool-burger {
-  position: relative;
-  justify-content: flex-start;
-  width: 250px;
-  padding-left: 69px;
-  font: @font;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: left;
+  line-height: 21px;
   color: @var-color-white-gray;
+  text-transform: uppercase;
 }
 
 
 @media (min-width: @tablet-width) {
   .here {
     display: flex;
-    position: relative;
-    bottom: 40px;
-    width: 768px;
-    height: 74px;
-  }
-
-  .here__house {
-    position: initial;
-    margin-top: 60px;
-    bottom: 60px;
-    padding-left: 90px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 26px 0 42px;
+    background-color: @var-background-color;
 
   }
 
-  .here__home {
-    position: inherit;
-    margin-top: 75px;
-    padding-top: 32px;
-    padding-left: 80px;
-    bottom: 237px;
-    width: 70px;
-    height: 50px;
-    font: @font;
+  .here > .here__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 12px;
+    width: 100%;
+  }
+
+  .here > .here__item:not(:first-of-type) {
+    margin-top: 0;
+  }
+
+  .here__item:nth-of-type(1) {
+    margin-top: 10px;
+  }
+
+ .here > .here__item:nth-of-type(2) {
+    order: 2;
+  }
+
+  .here > .here__item > .here__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 72px;
+    margin-right: 12px;
+  }
+
+
+  .here > .here__item > .here__block-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+    padding-bottom: 20px;
+  }
+
+  .here > .here__item > .here__block-content:nth-of-type(1) {
+    margin-top: 10px;
+  }
+
+  .here > .here__item > .here__block-content:nth-of-type(2) {
+    margin-top: 12px;
+    width: 70%;
+  }
+
+  .here > .here__item > .here__block-content:nth-of-type(3) {
+    margin-top: 6px;
+  }
+
+  .here > .here__item > .here__block-content > .here__block-content-title {
+    font-family: @font;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    color: @var-color-black;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 32px;
+    padding-bottom: 20px;
   }
 
-  .here__sojourn {
-    position: relative;
-    bottom: 285px;
-    padding-top: 32px;
-    padding-left: 51px;
-    width: 161px;
-    height: 50px;
-    font: @font;
+  .here > .here__item > .here__block-content > .here__block-content-text {
+    font-family: @font;
+    margin-top: 4px;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     text-align: center;
-  }
-
-  .here__list-home {
-      position: relative;
-      bottom: 300px;
-      width: 75px;
-      height: 75px;
-      background-image: url("source/img/icon-house.svg");
-  }
-
-  .here__gift {
-    position: inherit;
-    bottom: 100px;
-    left: 225px;
-    margin-right: 97px;
-    margin-top: 57px;
-  }
-
-  .here__souvenirs {
-    position: inherit;
-    margin-top: 32px;
-    margin-right: 47px;
-    padding-left: 80px;
-    bottom: 262px;
-    left: 120px;
-    width: 70px;
-    height: 21px;
-    font: @font;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-  }
-  .here__local-production {
-    position: relative;
-    bottom: 280px;
-    padding-top: 32px;
-    padding-left: 51px;
-    margin-right: 46px;
-    left: 110px;
-    width: 170px;
-    height: 50px;
-    font: @font;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: center;
-  }
-
-  .here__list-souvenirs {
-    position: relative;
-    bottom: 200px;
-    left: 150px;
-  }
-
-  .here__burger {
-    position: inherit;
-    margin-right: 185px;
-    right: 260px;
-    bottom: 40px;
-  }
-
-  .here__food {
-    position: inherit;
-    margin-top: 32px;
-    margin-right: 100px;
-    padding-left: 80px;
-    bottom: 202px;
-    left: -330px;
-    width: 40px;
-    height: 21px;
-    font: @font;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-  }
-
-  .here__cool-burger {
-    position: relative;
-    bottom: 220px;
-    padding-top: 32px;
-    padding-left: 51px;
-    margin-right: 46px;
-    left: -355px;
-    width: 155px;
-    height: 50px;
-    font: @font;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: center;
-  }
-
-  .here__list-burger {
-    position: relative;
-    bottom: 200px;
-    left: 100px;
+    color: @var-color-white-gray;
+    text-transform: uppercase;
   }
 }
 
 
 @media (min-width: @desktop-width) {
-    .here {
-      display: flex;
-      position: relative;
-      bottom: 57px;
-      width: 1200px;
-      height: 74px;
-    }
-
-    .here__house {
-      position: initial;
-      margin-top: 60px;
-      bottom: 60px;
-      padding-left: 161px;
-
-    }
-
-    .here__home {
-      position: inherit;
-      margin-top: 75px;
-      padding-top: 32px;
-      padding-left: 160px;
-      bottom: 237px;
-      width: 70px;
-      height: 45px;
-      font: @font;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 26px;
-    }
-
-    .here__sojourn {
-      position: relative;
-      bottom: 285px;
-      padding-top: 32px;
-      padding-left: 73px;
-      width: 252px;
-      height: 50px;
-      font: @font;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      text-align: center;
-    }
-
-    .here__gift {
-      position: inherit;
-      bottom: 100px;
-      left: 702px;
-      margin-right: 169px;
-      margin-top: 57px;
-    }
-
-    .here__souvenirs {
-      position: inherit;
-      margin-top: 32px;
-      margin-right: 160px;
-      padding-left: 80px;
-      bottom: 262px;
-      left: 583px;
-      width: 70px;
-      height: 21px;
-      font: @font;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 26px;
-    }
-    .here__local-production {
-      position: relative;
-      bottom: 280px;
-      padding-top: 32px;
-      padding-left: 51px;
-      margin-right: 46px;
-      left: 570px;
-      width: 214px;
-      height: 50px;
-      font: @font;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      text-align: center;
-    }
-
-    .here__list-souvenirs {
-      position: relative;
-      bottom: 200px;
-      left: 150px;
-    }
-
-    .here__burger {
-      position: inherit;
-      margin-right: 562px;
-      right: -30px;
-      bottom: 40px;
-    }
-
-    .here__food {
-      position: inherit;
-      margin-top: 32px;
-      margin-right: 100px;
-      padding-left: 80px;
-      bottom: 202px;
-      left: -36px;
-      width: 40px;
-      height: 21px;
-      font: @font;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 26px;
-    }
-
-    .here__cool-burger {
-      position: relative;
-      bottom: 220px;
-      padding-top: 32px;
-      padding-left: 51px;
-      margin-right: 458px;
-      left: -100px;
-      width: 283px;
-      height: 50px;
-      font: @font;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      text-align: center;
-    }
-
-    .here__list-burger {
-      position: relative;
-      bottom: 200px;
-      left: 100px;
-    }
+  .here__block-content {
+    margin: 0;
   }
+}
+

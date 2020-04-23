@@ -1,123 +1,141 @@
 .bridge {
-  background-color:@var-background;
-  width: 340px;
-  height: 239px;
-  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: @var-background;
+  width: 100%;
+  height: auto;
+}
+
+.bridge__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 45px;
+  margin-bottom: 42px;
+  width: 86%;
 }
 
 .bridge__devil-bridge {
-  padding-left: 5px;
-  padding-top: 30px;
-  width: 320px;
-  height: 14px;
-  font: @font;
+  font-family: @font;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  margin-left: 5px;
   text-align: center;
   color: @var-color-white;
 }
 
-.bridge__venture {
-  padding-left: 5px;
-  width: 320px;
+.bridge__number-two {
   font: @font;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin-left: 5px;
   text-align: center;
   color: @var-color-white;
+  margin-top: 25px;
 }
 
-.bridge__layer-5 {
-  padding-top: 30px;
+.bridge__venture {
+  font: @font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: @var-color-white;
+  margin-top: 25px;
 }
 
 @media (min-width: @tablet-width) {
   .bridge {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 40px;
-    width: 768px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
     height: 256px;
-  }
-
-  .bridge__devil-bridge {
-    position: relative;
-    margin-top: 46px;
-    bottom: 50px;
-    left: 560px;
-    width: 150px;
-    height: 50px;
-    font: @font;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-  }
-
-  .bridge__venture {
-    position: relative;
-    top: 80px;
-    left: 250px;
-    padding-left: 139px;
-    padding-bottom: 55px;
-    width: 190px;
-    height: 100px;
-    font: @font;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: center;
-  }
-
-  .bridge__layer-5 {
-    position: relative;
-    bottom: 223px;
-    width: 512px;
-    height: 266px;
-    background-image: url("source/img/photo-bridge-tablet@1x.jpg");
-  }
 }
 
-
-@media (min-width: @desktop-width) {
-  .bridge {
+.bridge__header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 86px;
-    left: 0;
-    width: 1200px;
-    height: 247px;
-  }
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-bottom: 42px;
+    background-color: @var-background;
+    width: 40%;
+}
 
-  .bridge__layer-5 {
-    position: relative;
-    bottom: 223px;
-    right: 0;
-    width: 801px;
-    height: 257px;
-    background-image: url("source/img/photo-bridge-desktop@1x.jpg");
-  }
+.bridge__devil-bridge {
+    width: 46%;
+    font-family: @font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: @var-color-white;
+}
 
-  .bridge__devil-bridge {
-    position: relative;
-    left: 905px;
-  }
-
-  .bridge__venture {
-    position: relative;
-    margin-right: 76px;
-    width: 268px;
-    top: 100px;
-    left: 552px;
+.bridge__number-two {
+    font: @font;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     text-align: center;
+    color: @var-color-white;
+    margin-top: 25px;
+}
+
+.bridge__venture {
+    width: 60%;
+    font: @font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: @var-color-white;
+    margin-top: 25px;
+  }
+
+.bridge__layer-5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 256px;
+  width: 70%;
+}
+}
+
+
+@media (min-width: @desktop-width) {
+  .bridge__devil-bridge {
+    width: 46%;
+    font-family: @font;
+    font-size: 21px;
+  }
+
+  .bridge__number-two {
+    font: @font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: @var-color-white;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .bridge__venture {
+    width: 60%;
+    font: @font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: @var-color-white;
+    padding-top: 25px;
   }
 }
