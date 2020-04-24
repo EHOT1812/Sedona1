@@ -1,10 +1,12 @@
+.main-nav {
+  z-index: 1;
+}
+
 .main-nav__list {
   display: block;
   justify-content: center;
   width: 320px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  .zeroing;
 }
 
 .main-nav__toggle {
@@ -14,9 +16,6 @@
   background-color: @var-background-color;
 }
 
-.main-nav {
-  min-height: 346px;
-}
 
 @media (min-width: @tablet-width) {
   .main-nav {
@@ -24,18 +23,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
     min-height: 56px;
-    width: 768px;
+    width: 100%;
+    background-color: @var-background-color;
   }
 
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 768px;
+    width: 100%;
   }
 
   .main-nav__list {
+    display: flex;
     height: 56px;
-    width: 768px;
+    width: 100%;
   }
 
   .main-nav__toggle {

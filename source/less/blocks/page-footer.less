@@ -1,87 +1,267 @@
 .page-footer {
-  width: 107%;
-  height: 250px;
+  width: 100%;
   background-color: @var-background-color;
 }
 
-.page-footer__title {
-  width: 136px;
-  height: 16px;
-  padding-left: 80px;
-  padding-top: 40px;
-  font: @font;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1.24;
-  text-align: center;
-  color: @var-color-black;
+.age-footer__index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: @var-background-color;
 }
 
-.page-footer__copyright {
-  position: relative;
-  padding-left: 80px;
-  padding-top: 40px;
-  width: 150px;
-  height: 11px;
-  font: @font;
-  font-size: 14px;
+.page-footer__hashtag {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding-top: 41px
+}
+
+.page-footer__title {
+  font-family: @font;
+  font-size: 21px;
+  font-weight: 700;
   line-height: 26px;
   text-align: center;
   color: @var-color-black;
 }
 
 .page-footer__social {
-  width: 340px;
-  height: 129px;
-  background-color: @var-color-white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
+.page-footer__social-list {
+  display: flex;
+  justify-content: center;
+  .zeroing-padding;
+  margin-top: 41px;
+  margin-bottom: 40px;
+}
+
+.page-footer__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 6px;
+  width: 46px;
+  height: 48px;
+  background-color: @var-background;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.page-footer__copyright-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: @font;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: @var-color-black;
+  margin-bottom: 35px;
+}
+
+.page-footer__copyright-button {
+  margin-left: 11px;
+}
 
 @media (min-width: @tablet-width) {
-  .page-footer{
+  .page-footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    position: relative;
-    bottom: 249px;
-    width: 768px;
-    height: 120px;
+    width: 100%;
+    background-color: @var-background-color;
+  }
+
+  .page-footer__index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: @var-background-color;
+  }
+
+  .page-footer__hashtag {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 18%;
+    padding-top: 0;
+    margin-left: 60px;
+    margin-right: 112px;
+  }
+
+  .page-footer__title {
+    font-family: @font;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: @var-color-black;
   }
 
   .page-footer__social {
-    position: relative;
-    bottom: 25px;
-    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 120px;
+  }
+
+  .page-footer__social-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .zeroing-padding;
+    margin-top: 41px;
+    margin-bottom: 40px;
+  }
+
+  .page-footer__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 6px;
+    width: 46px;
+    height: 48px;
+    background-color: @var-background;
   }
 
   .page-footer__copyright {
-    position: relative;
-    left: 500px;
-    bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding-top: 43px;
+    margin-right: 60px;
+  }
+
+  .page-footer__copyright-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: @font;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: @var-color-black;
+    margin-bottom: 35px;
+  }
+
+  .page-footer__copyright-button {
+    margin-left: 11px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .page-footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    position: relative;
-    bottom: 300px;
-    width: 1200px;
-    height: 120px;
+    width: 100%;
+    background-color: @var-background-color;
+  }
+
+  .page-footer__index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: @var-background-color;
+  }
+
+  .page-footer__hashtag {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 18%;
+    padding-top: 0;
+    margin-left: 60px;
+    margin-right: 269px;
+  }
+
+  .page-footer__title {
+    font-family: @font;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: @var-color-black;
   }
 
   .page-footer__social {
-    position: relative;
+    display: flex;
     justify-content: center;
-    left: 250px;
-    bottom: 25px;
-    background: none;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 120px;
+  }
+
+  .page-footer__social-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .zeroing-padding;
+    margin-top: 41px;
+    margin-bottom: 40px;
+  }
+
+  .page-footer__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 6px;
+    width: 46px;
+    height: 48px;
+    background-color: @var-background;
   }
 
   .page-footer__copyright {
-    position: absolute;
-    left: 930px;
-    bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding-top: 43px;
+    margin-right: 60px;
   }
+
+  .page-footer__copyright-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: @font;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: @var-color-black;
+    margin-bottom: 35px;
+    padding-left: 273px;
+  }
+
+  .page-footer__copyright-button {
+    margin-left: 11px;
+  }
+
 }

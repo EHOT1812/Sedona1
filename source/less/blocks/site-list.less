@@ -1,4 +1,7 @@
 .site-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 320px;
   height: 55px;
   padding: 10px;
@@ -10,11 +13,9 @@
 .site-list__item-menu {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 320px;
-
-  padding: 5px 0;
-  margin-bottom: 10px;
-  font: @font;
+  font-family: @font;
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
@@ -27,29 +28,26 @@
 @media (min-width: @tablet-width) {
 
   .site-list__item {
-    display: inline-block;
     box-sizing: border-box;
-    font: @font;
-    width: 192px;
+    font-family: @font;
+    width: calc((100% - 156px) / 4);
     padding: 15px;
     border: none;
     background-color: @var-color-white;
 
-      &:nth-child(2) {
-        margin-right: auto;
+      &:nth-of-type(3) {
+        margin-left: auto;
       }
 
-      &:nth-child(n+5) {
-        margin-top: 30px;
-        width: 25%;
+      &:last-child {
+        margin-right: 0;
       }
   }
 
   .site-list__item-menu {
-    position: relative;
-    right: 125px;
-    width: 56px;
-    height: 11px;
+    width: 100%;
+    min-width: auto;
+    padding: 0;
     font-family: @font;
     font-size: 14px;
     font-weight: 700;
@@ -57,14 +55,28 @@
     text-align: center;
     color: @var-color-black;
   }
+
+  .site-list__item a[href] {
+    &:hover {
+      color: @var-background;
+    }
+
+    &:active {
+      color: #604e43;
+    }
+  }
+  .site-list__item .site-list__item--active a[href] {
+    &:visited {
+      color: #766357;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .site-list__item {
-    display: inline-block;
     box-sizing: border-box;
-    font: @font;
-    width: 300px;
+    font-family: @font;
+    width: calc((100% - 244px) / 4);
     padding: 15px;
     border: none;
     background-color: @var-color-white;
@@ -79,10 +91,7 @@
     }
 
     .site-list__item-menu {
-      position: relative;
-      right: 50px;
-      width: 56px;
-      height: 11px;
+      margin: 0;
       font-family: @font;
       font-size: 14px;
       font-weight: 700;

@@ -1,85 +1,94 @@
 .search {
+  width: 100%;
+  padding: 33px 20px 49px;
+  background-color: @var-background-color;
+}
+
+.search > .search__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: @var-background-color;
-  width: 340px;
-  height: 239px;
-  padding-top: 10px;
 }
 
-.search__interested {
-  padding-left: 5px;
-  padding-top: 10px;
-  width: 320px;
-  font: @font;
-  font-size: 18px;
+.search__item-title {
+  font-family: @font;
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin-left: 5px;
   text-align: center;
   color: @var-color-black;
 }
 
-.search__expected-date {
-  padding-left: 5px;
-  width: 320px;
-  font: @font;
+.search__item-text {
+  padding-top: 25px;
+  font-family:@font;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
-  margin-left: 5px;
+  line-height: 24px;
   text-align: center;
   color: @var-color-black;
 }
 
-.search__brown-button-list {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display:flex;
-  justify-content:space-around;
-  margin:0;
-  padding:0;
-  list-style-type:none;
-  min-width:280px;
-  min-height:56px;
+.search__item-button {
+  width: 95%;
+  height: 58px;
+  margin-top: 40px;
   background-color: @var-background;
 }
 
-.search__brown-button {
-  display: inline-block;
-  vertical-align: top;
-  font: @font;
+.search__item-brown-button {
+  font-family: @font;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: @var-color-brown-button;
+  border: none;
 }
-
 
 @media (min-width: @tablet-width) {
   .search {
     display: flex;
     justify-content: center;
-    position: relative;
-    height: 318px;
-    width: 768px;
-    bottom: 250px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .search__item {
+    width: 60%;
+  }
+
+  .search__item-title {
+    padding-top: 57px;
+    font-family:@font;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .search__item-text {
+    width: 91%;
+}
+
+  .search__item-button {
+  width: 100%;
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .search {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 331px;
-    width: 1200px;
-    bottom: 270px;
+    margin: 0;
+  }
+
+  .search__item-text {
+    width: 57%;
+    margin-right: 0;
+  }
+
+  .search__item-button {
+    width: 60%;
   }
 }

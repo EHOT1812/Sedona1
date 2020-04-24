@@ -2,7 +2,9 @@
 
 @import "common/colors.less";
 
-@import "common/sedona-sizes.less";
+@import "common/variables.less";
+
+@import "common/mixins.less";
 
 @import "blocks/main-nav.less";
 @import "blocks/page-header.less";
@@ -32,13 +34,27 @@
 @import "blocks/visually-hidden";
 @import "blocks/map.less";
 
-body {
+* {
   margin: 0;
   padding: 0;
-  min-width: 320px;
-  min-height: 100%;
+  box-sizing: border-box;
+}
 
-  font: @font;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  //margin: 0;
+  //padding: 0;
+  //min-width: 320px;
+  //min-height: 100%;
+
+  font-family: @font;
   font-size: 14px;
   font-weight: 700;
   color: @var-color-black;
@@ -49,40 +65,28 @@ body {
   background-repeat: no-repeat;
 }
 
-.page{
-  position: inherit;
+.page {
+  min-height: 100%;
   max-width: 320px;
-  min-height: auto;
-  margin: 0 auto;
   font-size: 0;
+  margin: 0 auto;
   color: @var-color-white;
 }
 
 @media (min-width: @tablet-width) {
   .page {
-    position: inherit;
     max-width: 768px;
-    min-height: auto;
     margin: 0 auto;
     font-size: 0;
-    color: @var-color-white;
+    background-color: @var-color-white;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page {
-    position: inherit;
     max-width: 1200px;
-    min-height: auto;
     margin: 0 auto;
     font-size: 0;
     color: @var-color-white;
   }
-}
-input {
-  width: 206px;
-  height: 58px;
-  padding: 21px auto;
-  background-color: @var-color-brown-button;
-  margin-bottom: 20px;
 }

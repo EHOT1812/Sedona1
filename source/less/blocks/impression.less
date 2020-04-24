@@ -1,37 +1,56 @@
 .impression {
-  width: 340px;
-  height: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
   background-color: @var-background-color;
-  border-top: 1px solid #9A9A9A;
-  border-bottom: 1px solid #9A9A9A;
+  border-bottom: 1px solid @var-color-border-gray;
 }
 
-.impression__general-impression {
-  position: relative;
-  bottom: 219px;
-  width: 330px;
-  height: 16px;
+.impression__general{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.impression__title {
   font-family: @font;
   font-size: 18px;
   font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 26;
+  line-height: 26px;
   text-align: center;
   color: @var-color-black;
 }
 
-.impression-input {
-  position: relative;
-  right: 55px;
+.impression__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-left: 25px;
+  margin-bottom: 32px;
 }
 
-.impression-label-positive {
+.impression__item:nth-of-type(2) {
+  margin-top: 23px;
+}
+
+.impression__item:nth-of-type(3) {
+  margin-top: 23px;
+}
+
+.impression__input {
+  width: 46px;
+  height: 46px;
+  margin: 0;
+}
+
+.impression__label {
   position: absolute;
-  left: 95px;
-  width: 310px;
-  height: 14px;
-  padding-top: 17px;
   font-family: @font;
   font-size: 18px;
   font-weight: 700;
@@ -39,100 +58,81 @@
   text-align: left;
   text-transform: none;
   color: @var-color-black;
-}
-
-.impression-label-complicate {
-  position: absolute;
-  left: 95px;
-  width: 310px;
-  height: 14px;
-  padding-top: 17px;
-  font-family: @font;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: @var-color-black;
-}
-
-.impression-label-negative {
-  position: absolute;
-  left: 95px;
-  width: 310px;
-  height: 14px;
-  padding-top: 17px;
-  font-family: @font;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: none;
-  color: @var-color-black;
+  margin-top: 10px;
+  margin-left: 14px;
 }
 
 @media (min-width: @tablet-width) {
 
   .impression {
-    position: relative;
-    bottom: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: @var-background-color;
     border-bottom: none;
-    border-top: none;
   }
 
-  .impression-input {
-    margin: 20px auto;
+  .impression__general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+    margin-top: 0;
+  }
+
+  .impression__title {
+    font-family: @font;
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .impression__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .impression__item:nth-of-type(2) {
+    margin-top: 50px;
+  }
+
+  .impression__item:nth-of-type(3) {
+    margin-top: 50px;
+  }
+
+  .impression__input {
+    width: 46px;
+    height: 46px;
+    margin: 0;
+  }
+
+  .impression__label {
+    position: absolute;
+    font-family: @font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-transform: none;
+    color: @var-color-black;
+    margin-top: 10px;
+    margin-left: 14px;
   }
 }
 
 @media (min-width: @desktop-width) {
-
-  .impression {
+  .impression__list {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    position: relative;
-    bottom: 570px;
-    width: 599px;
-    height: 332px;
-    border-bottom: none;
-    border-top: none;
-  }
-
-  .impression-input {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 58px;
-    height: 332px;
-    margin-left: 129px;
-    bottom: 85px;
-  }
-
-  .impression__general-impression {
-    position: relative;
-    bottom: 295px;
-  }
-
-  .impression-label-positive {
-    display: flex;
-    flex-direction: column;
-    left: 170px;
-    bottom: 5px;
-    width: 599px;
-    height: 332px;
-  }
-
-  .impression-label-negative {
-    display: flex;
-    flex-direction: column;
-    left: 170px;
-    bottom: 230px;
-  }
-
-  .impression-label-complicate {
-    display: flex;
-    flex-direction: column;
-    left: 170px;
-    bottom: 130px;
+    margin-top: 67px;
+    margin-left: 0;
+    margin-bottom: 32px;
   }
 }

@@ -1,131 +1,161 @@
 .dignity {
-  display: block;
-  justify-content: start;
-  padding-top: 250px;
-  width: 340px;
-  height: 603px;
+  width: 100%;
+  padding: 33px 0 32px;
+  background-color: @var-background-body;
 }
 
-.dignity__small-area {
-  padding-left: 5px;
-  width: 320px;
-  font: @font;
+.dignity__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 37px;
+  padding-left: 37px;
+
+}
+
+.dignity__item:not(:first-of-type) {
+  margin-top: 66px;
+}
+
+.dignity__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.dignity__content:nth-of-type(2) {
+  border-top: 1px solid @var-color-border-gray;
+  border-bottom: 1px solid @var-color-border-gray;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.dignity__list-title {
+  font-family: @font;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  margin-left: 5px;
   text-align: center;
   color: @var-color-black;
+  text-transform: uppercase;
 }
 
-.dignity__very-near {
-  padding-left: 5px;
-  width: 320px;
-  font: @font;
+.dignity__list-number {
+  font-family: @font;
+  margin-top: 25px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin-left: 5px;
   text-align: center;
-  color: @var-color-black;
+  color: @var-color-white-gray;
+  text-transform: uppercase;
 }
 
-.dignity__beautiful-road {
-  padding-left: 5px;
-  padding-top: 66px;
-  width: 320px;
-  font: @font;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  margin-left: 5px;
-  text-align: center;
-  color: @var-color-black;
-}
-
-.dignity__going-to-sedona {
-  padding-left: 5px;
-  width: 320px;
-  font: @font;
+.dignity__list-text {
+  font-family: @font;
+  margin-top: 25px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  margin-left: 5px;
   text-align: center;
-  color: @var-color-black;
+  color: @var-color-white-gray;
+  text-transform: uppercase;
 }
 
-.dignity__few-tourists {
-  padding-left: 5px;
-  padding-top: 66px;
-  width: 320px;
-  font: @font;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  margin-left: 5px;
-  text-align: center;
-  color: @var-color-black;
-}
-
-.dignity__local-production {
-  padding-left: 5px;
-  width: 320px;
-  font: @font;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  margin-left: 5px;
-  text-align: center;
-  color: @var-color-black;
-}
 
 
 @media (min-width: @tablet-width) {
   .dignity {
+    width: 100%;
+    padding: 33px 0 32px;
+    background-color: @var-background-body;
+  }
+
+  .dignity > .dignity__item {
     display: flex;
     flex-direction: row;
-    width: 768px;
-    height: 256px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 37px;
+    padding-left: 37px;
+
   }
 
-  .dignity__list-small-area {
-    position: relative;
-    bottom: 240px;
+   .dignity__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 49px;
   }
 
-  .dignity__list-beautiful-road {
-    position: relative;
-    bottom: 305px;
+  .dignity__content:nth-of-type(2) {
+    border: none;
   }
 
-  .dignity__list-few-tourists {
-    position: relative;
-    bottom: 305px;
+   .dignity__content .dignity__list-title {
+    width: 70%;
+    font-family: @font;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: @var-color-black;
+    text-transform: uppercase;
+  }
+
+   .dignity__content .dignity__list-number {
+    font-family: @font;
+    width: 70%;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: @var-color-white-gray;
+    text-transform: uppercase;
+  }
+
+   .dignity__content .dignity__list-text {
+    width: 75%;
+    font-family: @font;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: @var-color-white-gray;
+    text-transform: uppercase;
   }
 }
+
+
 
 
 @media (min-width: @desktop-width) {
   .dignity {
     display: flex;
-    flex-direction: row;
-    width: 1200px;
-    height: 256px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
   }
 
-  .dignity__list-small-area {
-    position: relative;
-    bottom: 240px;
+   .dignity__content .dignity__list-title  {
+    padding-left: 100px;
+    width: 68%;
   }
 
-  .dignity__list-beautiful-road {
-    position: relative;
-    bottom: 305px;
+   .dignity__content .dignity__list-number {
+    width: 68%;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 100px;
   }
-
-  .dignity__list-few-tourists {
-    position: relative;
-    bottom: 305px;
+   .dignity__content .dignity__list-text {
+    width: 100%;
   }
 }
+

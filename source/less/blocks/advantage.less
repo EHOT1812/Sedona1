@@ -1,85 +1,103 @@
 .advantage {
-  position: relative;
-  bottom: 15px;
-  min-width: 340px;
-  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: @var-background-color;
 }
 
+.advantage__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 43px;
+}
+
 .advantage__sedona {
-  width: 320px;
-  height: 100px;
-  font: @font;
+  width: 80%;
+  height: auto;
+  font-family: @font;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  margin-left: 10px;
   text-align: center;
   color: @var-color-black;
 }
 
 .advantage__five-reasons {
-  width: 320px;
-  height: 149px;
-  font: @font;
+  width: 80%;
+  height: auto;
+  font-family: @font;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  margin-left: 5px;
+  padding-top: 20px;
   text-align: center;
   color: @var-color-white-gray;
 }
 
 .advantage__intro-mask {
   position: absolute;
-  justify-content: center;
-  min-width: 340px;
-  padding-left: 10px;
-  top: 1000px;
+  bottom: 0;
   left: 0;
+  margin-top: 10px;
   width: 100%;
 }
-
 
 @media (min-width: @tablet-width) {
   .advantage {
     display: flex;
     justify-content: center;
-    height: 206px;
-    width: 768px;
-    bottom: 36px;
+    align-items: center;
+    width: 100%;
   }
 
   .advantage__sedona {
-    width: 490px;
-    height: 100px;
-    font: @font;
+    font-family: @font;
     font-size: 21px;
     font-weight: 700;
-    text-align: center;
+    line-height: 26px;
+    align-items: center;
     color: @var-color-black;
+  }
+
+  .advantage__five-reasons {
+    font-family: @font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: @var-color-white-gray;
+    padding-bottom: 55px;
   }
 }
 
 
 
 @media (min-width: @desktop-width) {
-  .advantage {
-    display: flex;
-    justify-content: center;
-    height: 206px;
-    width: 1200px;
-    bottom: 57px;
-  }
+
 
   .advantage__sedona {
-    width: 490px;
-    height: 100px;
-    font: @font;
+    width: 50%;
+    font-family: @font;
     font-size: 21px;
     font-weight: 700;
+    line-height: 26px;
     text-align: center;
     color: @var-color-black;
+  }
+
+  .advantage__five-reasons {
+    font-family: @font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: @var-color-white-gray;
+    margin-right: 0;
   }
 
   .advantage__intro-mask {
