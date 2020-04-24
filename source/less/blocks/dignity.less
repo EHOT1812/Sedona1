@@ -1,10 +1,10 @@
 .dignity {
   width: 100%;
   padding: 33px 0 32px;
-  background-color: #f2f2f2;
+  background-color: @var-background-body;
 }
 
-.dignity > .dignity__item {
+.dignity__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,25 +14,25 @@
 
 }
 
-.dignity > .dignity__item:not(:first-of-type) {
+.dignity__item:not(:first-of-type) {
   margin-top: 66px;
 }
 
-.dignity > .dignity__item > .dignity__content {
+.dignity__content {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 32px;
 }
 
-.dignity > .dignity__item > .dignity__content:nth-of-type(2) {
-  border-top: 1px solid #9A9A9A;
-  border-bottom: 1px solid #9A9A9A;
+.dignity__content:nth-of-type(2) {
+  border-top: 1px solid @var-color-border-gray;
+  border-bottom: 1px solid @var-color-border-gray;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.dignity > .dignity__item > .dignity__content .dignity__list-title {
+.dignity__list-title {
   font-family: @font;
   font-size: 18px;
   font-weight: 700;
@@ -42,7 +42,7 @@
   text-transform: uppercase;
 }
 
-.dignity > .dignity__item > .dignity__content .dignity__list-number {
+.dignity__list-number {
   font-family: @font;
   margin-top: 25px;
   font-size: 14px;
@@ -53,7 +53,7 @@
   text-transform: uppercase;
 }
 
-.dignity > .dignity__item > .dignity__content .dignity__list-text {
+.dignity__list-text {
   font-family: @font;
   margin-top: 25px;
   font-size: 14px;
@@ -70,7 +70,7 @@
   .dignity {
     width: 100%;
     padding: 33px 0 32px;
-    background-color: #f2f2f2;
+    background-color: @var-background-body;
   }
 
   .dignity > .dignity__item {
@@ -83,7 +83,7 @@
 
   }
 
-  .dignity > .dignity__item > .dignity__content {
+   .dignity__content {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -91,11 +91,11 @@
     margin-left: 49px;
   }
 
-  .dignity > .dignity__item > .dignity__content:nth-of-type(2) {
+  .dignity__content:nth-of-type(2) {
     border: none;
   }
 
-  .dignity > .dignity__item > .dignity__content .dignity__list-title {
+   .dignity__content .dignity__list-title {
     width: 70%;
     font-family: @font;
     font-size: 21px;
@@ -106,7 +106,7 @@
     text-transform: uppercase;
   }
 
-  .dignity > .dignity__item > .dignity__content .dignity__list-number {
+   .dignity__content .dignity__list-number {
     font-family: @font;
     width: 70%;
     margin-top: 25px;
@@ -118,7 +118,7 @@
     text-transform: uppercase;
   }
 
-  .dignity > .dignity__item > .dignity__content .dignity__list-text {
+   .dignity__content .dignity__list-text {
     width: 75%;
     font-family: @font;
     margin-top: 25px;
@@ -143,18 +143,18 @@
     margin: 0;
   }
 
-  .dignity > .dignity__item > .dignity__content .dignity__list-title  {
+   .dignity__content .dignity__list-title  {
     padding-left: 100px;
     width: 68%;
   }
 
-  .dignity > .dignity__item > .dignity__content .dignity__list-number {
+   .dignity__content .dignity__list-number {
     width: 68%;
     margin: 0;
     padding-top: 10px;
     padding-left: 100px;
   }
-  .dignity > .dignity__item > .dignity__content .dignity__list-text {
+   .dignity__content .dignity__list-text {
     width: 100%;
   }
 }
