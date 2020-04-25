@@ -7,6 +7,7 @@
 .photo_item {
   width: 100%;
 }
+
 .photo__list {
   display: flex;
   justify-content: center;
@@ -25,8 +26,8 @@
 
 .photo__image {
   position: relative;
-  padding-bottom: 82.40%;
-  margin-top: 0;
+  padding-bottom: 82.4%;
+  margin-top: 22px;
 }
 
 .photo__list-image {
@@ -38,11 +39,6 @@
   width: 100%;
   height: 100%;
 }
-
-.photo__image {
-  margin-top: 22px;
-}
-
 
 .photo__description {
   width: 100%;
@@ -103,11 +99,11 @@
     margin: 0 auto;
   }
 
-  .photo > .photo__list > .photo_item {
+  .photo_item {
     width: 50%;
   }
 
-  .photo > .photo__list > .photo_item:first-of-type {
+  .photo_item:first-of-type {
     width: 100%;
   }
 
@@ -121,7 +117,7 @@
 
   .photo__image {
     position: relative;
-    padding-bottom: 82.40%;
+    padding-bottom: 82.4%;
     margin-top: 0;
   }
 
@@ -183,10 +179,12 @@
     flex-direction: row;
     margin-top: 28px;
     margin-right: 25px;
-    width: 5%;
+    width: 20%;
   }
 
   .photo__icon {
+    width: 22px;
+    height: 20px;
     opacity: 0.3;
   }
 
@@ -201,76 +199,78 @@
   }
 }
 
-  @media (min-width: @desktop-width) {
-    .photo {
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .photo > .photo__list > .photo_item {
-      position: relative;
-      width: 400px;
-      margin: 0;
-    }
-
-    .photo__list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      margin-top: 75px;
-    }
-
-    .photo__image:first-child {
-      position: relative;
-      padding-bottom: 70%;
-      margin-top: 0;
-    }
-
-    .photo__content {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1;
-      background: rgba(0, 0, 0, 0.3);
-    }
-
-
-    .photo__description {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-      margin-top: 22px;
-      margin-bottom: 21px;
-      margin-left: 20px;
-    }
-
-    .photo__title {
-      font-family: @font;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 24px;
-      text-align: left;
-      padding-top: 2px;
-      color: @var-color-white;
-    }
-
-    .photo__text {
-      color: @var-color-white;
-    }
-
-    .photo__icon-like {
-      opacity: 1;
-    }
-
-    .photo__icon {
-      opacity: 1;
-    }
-
-    .photo__quantity {
-      color: @var-color-white;
-    }
+@media (min-width: @desktop-width) {
+  .photo {
+    width: 100%;
+    margin: 0 auto;
   }
+
+  .photo_item {
+    position: relative;
+    width: 400px;
+    margin: 0;
+  }
+
+  .photo__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 75px;
+  }
+
+  .photo__image:first-child {
+    position: relative;
+    padding-bottom: 70%;
+    margin-top: 0;
+  }
+
+  .photo__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+
+  .photo__description {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-bottom: 21px;
+    margin-left: 20px;
+  }
+
+  .photo__title {
+    font-family: @font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 2px;
+    color: @var-color-white;
+  }
+
+  .photo__text {
+    color: @var-color-white;
+  }
+
+  .photo__icon-like svg path {
+    opacity: 1;
+    fill: #ffffff;
+  }
+
+  .photo__icon {
+    opacity: 1;
+  }
+
+  .photo__quantity {
+    color: @var-color-white;
+    margin: 0;
+  }
+}
