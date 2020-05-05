@@ -5,14 +5,18 @@
         <title>Sedona</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="format-detection" content="telephone=no">
+      <link rel="preload" href="css/style.min.css" as="style">
       <link rel="stylesheet" href="css/style.min.css">
+      <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     </head>
+
+    <body>
 
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <body>
         <div class="page">
         <header class="page-header">
             <nav class="main-nav">
@@ -41,7 +45,7 @@
                     </a>
                   </div>
                   <button class="main-nav__toggle" type="button">
-                    <svg class="toggle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+                    <svg class="toggle" version="1.0" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
                       <g>
                         <rect width="22.928" height="3.964" fill="#81b3d2"></rect>
                         <rect y="9.009" width="22.928" height="3.964" fill="#81b3d2"></rect>
@@ -53,6 +57,10 @@
             </nav>
             <div class="page-header__background-photo">
                 <picture class="page-header__photo-image">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.webp 1x, img/bg-back-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.webp 1x, img/bg-back-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/bg-back-mobile@1x.webp 1x, img/bg-back-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
                   <img srcset="img/bg-back-mobile@1x.jpg" src="img/bg-back-mobile@1x.jpg" alt="Горы" class="page-header__photo">
@@ -84,9 +92,9 @@
                     <p class="real-city__sedona">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                   </div>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop_1x.webp 1x, img/main-city-desktop_2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet_1x.webp 1x, img/main-city-tablet_2x.webp 2x">
-                    <source type="image/webp" srcset="img/main-city-mobile_1x.webp 1x, img/main-bridge-mobile_2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
 
                     <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
@@ -154,6 +162,9 @@
         <p class="bridge__venture">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
 
           <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
@@ -202,21 +213,21 @@
                   <ul class="page-footer__social-list">
                       <li class="page-footer__social-item">
                           <a class="page-footer__tfitter" href="https://vk.com/htmlacademy">
-                            <svg width="18" height="15">
+                            <svg width="18" height="15" aria-label="open=tfitter">
                               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
                             </svg>
                           </a>
                       </li>
                       <li class="page-footer__social-item">
                           <a class="page-footer__facebook" href="https://www.facebook.com/htmlacademy">
-                            <svg width="9" height="19">
+                            <svg width="9" height="19" aria-label="open-facebook">
                               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
                             </svg>
                           </a>
                       </li>
                       <li class="page-footer__social-item">
                           <a class="page-footer__youtube" href="https://www.instagram.com/htmlacademy">
-                            <svg width="20" height="14">
+                            <svg width="20" height="14" aria-label="open youtube">
                               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
                             </svg>
                           </a>
